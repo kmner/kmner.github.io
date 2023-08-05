@@ -3,90 +3,15 @@
 
 <head>
     <title>♥️TEST</title>
-    <!-- <link rel="stylesheet" href="{% static 'main.css' %}"> -->
-    <link rel="stylesheet" href="./js/shizhong.css">
-	<script src="./js/shizhong.js"></script>
 </head>
 
 <body>
     <div class="App">
-		<script type="text/javascript">
-			setTimeout(function(){
-				const text = document.createElement("box");
-				htmlappend(".refresh", text.outerHTML);
-			},10000); //指定1秒刷新一次
-		</script>
-
         <header class="App-header">
             <!-- <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" /> -->
 			<br><br>
-			<div class="box">
-				<div class="clock" id="clock">
-				<div id="date" class="date">2023-3-26 星期七</div>
-				<div id="hour" class="hour" style="transform: rotate(42deg);"></div>
-				<div id="min" class="min" style="transform: rotate(60deg);"></div>
-				<div id="sec" class="sec" style="transform: rotate(-84deg);"></div>
-				<em style="left: 220px; top: 1px; transform: rotate(6deg);"></em>
-				<em style="left: 241px; top: 4px; transform: rotate(12deg);"></em>
-				<em style="left: 261px; top: 9px; transform: rotate(18deg);"></em>
-				<em style="left: 281px; top: 17px; transform: rotate(24deg);"></em>
-				<em class="ishour" style="left: 300px; top: 26px; transform: rotate(30deg);"><i style="-webkit-transform:rotate(-30deg);">1</i></em>
-				<em style="left: 317px; top: 38px; transform: rotate(36deg);"></em>
-				<em style="left: 333px; top: 51px; transform: rotate(42deg);"></em>
-				<em style="left: 348px; top: 66px; transform: rotate(48deg);"></em>
-				<em style="left: 361px; top: 82px; transform: rotate(54deg);"></em>
-				<em class="ishour" style="left: 373px; top: 100px; transform: rotate(60deg);"><i style="-webkit-transform:rotate(-60deg);">2</i></em>
-				<em style="left: 382px; top: 118px; transform: rotate(66deg);"></em>
-				<em style="left: 390px; top: 138px; transform: rotate(72deg);"></em>
-				<em style="left: 395px; top: 158px; transform: rotate(78deg);"></em>
-				<em style="left: 398px; top: 179px; transform: rotate(84deg);"></em>
-				<em class="ishour" style="left: 400px; top: 200px; transform: rotate(90deg);"><i style="-webkit-transform:rotate(-90deg);">3</i></em>
-				<em style="left: 398px; top: 220px; transform: rotate(96deg);"></em>
-				<em style="left: 395px; top: 241px; transform: rotate(102deg);"></em>
-				<em style="left: 390px; top: 261px; transform: rotate(108deg);"></em>
-				<em style="left: 382px; top: 281px; transform: rotate(114deg);"></em>
-				<em class="ishour" style="left: 373px; top: 300px; transform: rotate(120deg);"><i style="-webkit-transform:rotate(-120deg);">4</i></em>
-				<em style="left: 361px; top: 317px; transform: rotate(126deg);"></em>
-				<em style="left: 348px; top: 333px; transform: rotate(132deg);"></em>
-				<em style="left: 333px; top: 348px; transform: rotate(138deg);"></em>
-				<em style="left: 317px; top: 361px; transform: rotate(144deg);"></em>
-				<em class="ishour" style="left: 300px; top: 373px; transform: rotate(150deg);"><i style="-webkit-transform:rotate(-150deg);">5</i></em>
-				<em style="left: 281px; top: 382px; transform: rotate(156deg);"></em>
-				<em style="left: 261px; top: 390px; transform: rotate(162deg);"></em>
-				<em style="left: 241px; top: 395px; transform: rotate(168deg);"></em>
-				<em style="left: 220px; top: 398px; transform: rotate(174deg);"></em>
-				<em class="ishour" style="left: 199px; top: 400px; transform: rotate(180deg);"><i style="-webkit-transform:rotate(-180deg);">6</i></em>
-				<em style="left: 179px; top: 398px; transform: rotate(186deg);"></em>
-				<em style="left: 158px; top: 395px; transform: rotate(192deg);"></em>
-				<em style="left: 138px; top: 390px; transform: rotate(198deg);"></em>
-				<em style="left: 118px; top: 382px; transform: rotate(204deg);"></em>
-				<em class="ishour" style="left: 99px; top: 373px; transform: rotate(210deg);"><i style="-webkit-transform:rotate(-210deg);">7</i></em>
-				<em style="left: 82px; top: 361px; transform: rotate(216deg);"></em>
-				<em style="left: 66px; top: 348px; transform: rotate(222deg);"></em>
-				<em style="left: 51px; top: 333px; transform: rotate(228deg);"></em>
-				<em style="left: 38px; top: 317px; transform: rotate(234deg);"></em>
-				<em class="ishour" style="left: 26px; top: 299px; transform: rotate(240deg);"><i style="-webkit-transform:rotate(-240deg);">8</i></em>
-				<em style="left: 17px; top: 281px; transform: rotate(246deg);"></em>
-				<em style="left: 9px; top: 261px; transform: rotate(252deg);"></em>
-				<em style="left: 4px; top: 241px; transform: rotate(258deg);"></em>
-				<em style="left: 1px; top: 220px; transform: rotate(264deg);"></em>
-				<em class="ishour" style="left: 0px; top: 200px; transform: rotate(270deg);"><i style="-webkit-transform:rotate(-270deg);">9</i></em>
-				<em style="left: 1px; top: 179px; transform: rotate(276deg);"></em>
-				<em style="left: 4px; top: 158px; transform: rotate(282deg);"></em>
-				<em style="left: 9px; top: 138px; transform: rotate(288deg);"></em>
-				<em style="left: 17px; top: 118px; transform: rotate(294deg);"></em>
-				<em class="ishour" style="left: 26px; top: 99px; transform: rotate(300deg);"><i style="-webkit-transform:rotate(-300deg);">10</i></em>
-				<em style="left: 38px; top: 82px; transform: rotate(306deg);"></em>
-				<em style="left: 51px; top: 66px; transform: rotate(312deg);"></em>
-				<em style="left: 66px; top: 51px; transform: rotate(318deg);"></em>
-				<em style="left: 82px; top: 38px; transform: rotate(324deg);"></em>
-				<em class="ishour" style="left: 100px; top: 26px; transform: rotate(330deg);"><i style="-webkit-transform:rotate(-330deg);">11</i></em>
-				<em style="left: 118px; top: 17px; transform: rotate(336deg);"></em>
-				<em style="left: 138px; top: 9px; transform: rotate(342deg);"></em>
-				<em style="left: 158px; top: 4px; transform: rotate(348deg);"></em>
-				<em style="left: 179px; top: 1px; transform: rotate(354deg);"></em>
-				<em class="ishour" style="left: 200px; top: 0px; transform: rotate(360deg);"><i style="-webkit-transform:rotate(-360deg);">12</i></em>
-				</div>
+			<div id="time">
+				<iFrame name="content_iframe" src='a.html' width="350" height="350" scrolling="no" frameborder=0></iFrame>
 			</div>
             <p>
                 GitHub Codespaces <span class="heart">♥️</span> Django
@@ -106,7 +31,7 @@
 
 				<meting-js server="netease" type="playlist" id="2575711792"  autoplay="false" fixed ="true"></meting-js>
 			</div>
-        </header>
+		</header>
     </div>
 </body>
 
