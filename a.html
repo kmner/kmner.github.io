@@ -399,10 +399,23 @@
           }
           tms.textContent=`${time.h}:${mm}`;
           sec.textContent=`${ss}`;
-          if (time.m > 15 && time.m < 45) {
-            tms.style.transform = `translate(-50%, -50%) translateY(-40px)`;
+
+          if (time.h >= 3 && time.h <= 9) {
+            if (time.m < 15) {
+                tms.style.transform = `translate(-50%, -50%) translateX(-60px)`;
+            } else if (time.m > 45) {
+                tms.style.transform = `translate(-50%, -50%) translateX(60px) translateY(-30px)`;
+            } else {
+                tms.style.transform = `translate(-50%, -50%) translateY(-40px)`;
+            }
           } else {
-            tms.style.transform = `translate(-50%, -50%) translateY(40px)`;
+            if (time.m <= 15 || time.m >= 45) {
+                tms.style.transform = `translate(-50%, -50%) translateY(40px)`;
+            } else if (time.m >= 30) {
+                tms.style.transform = `translate(-50%, -50%) translateX(60px)`;
+            } else {
+                tms.style.transform = `translate(-50%, -50%) translateX(-60px)`;
+            }
           }
 
           lineH.style.transform = `rotate(${hDeg}deg)`;
